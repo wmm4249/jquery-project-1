@@ -26,7 +26,7 @@ _If you would like to give feedback on this project, feel free to email or text 
 
 ## Setup Instructions
 
-_To view the project in your own personal browser, use Git Bash and Visual Studio Code once they are installed on your computer. The first step would be to create a directory through Git Bash, and create a HTML file through a touch command, and then type "code ." to open Visual Studio Code. Once this is open, simply copy and paste the HTML from the GitHub repository and save. Finally, go to the directory folder, and click on the HTML file. This should open the project and display like a website that you would see live on the internet._
+_Lorem ipsum blablabla._
 
 ## Known Bugs
 
