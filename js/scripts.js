@@ -9,16 +9,13 @@ $(document).ready(function() {
     let result;
     let resultScore = aspect + q2 + q3 + q4 + q5;
 
-    console.log("aspect: ", aspect, typeof aspect);
-    console.log("resultScore: ", resultScore, typeof resultScore)
-
-    if (resultScore = 5 ||  resultScore <= 8) {
+    if (resultScore == 5 || resultScore <= 8) {
       result = "You should learn Javascript.";
-    } else if (resultScore >= 9 || resultScore <= 12) {
+    } else if (resultScore >= 9 && resultScore <= 12) {
       result = "You should learn Python.";
-    } else if (resultScore >= 13 || resultScore <= 16) {
+    } else if (resultScore >= 13 && resultScore <= 16) {
       result = "You should learn C#.";
-    } else if (resultScore >= 17 || resultScore <= 20) {
+    } else if (resultScore >= 17 && resultScore <= 20) {
       result = "You should learn Ruby.";
     }    
 
