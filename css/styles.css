@@ -2,7 +2,7 @@ body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
     background: skyblue;
-    background: linear-gradient(0deg, skyblue 0%, rgba(255,255,255,1) 50%);
+    background: linear-gradient(0deg, skyblue 0%, white 50%) 60%;
   }
   
   h1 {
@@ -30,7 +30,7 @@ body {
     color: yellow;
     padding: 10px 10px;
     text-align: center;
-    display: inline-block;
+    display: block;
     font-size: 15px;
     border-radius: 10px;
     cursor: pointer;
