@@ -10,63 +10,58 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h2>
-      <span>What aspect of programming sounds the most interesting to you?</span>
-    </h2>
-    <form id="formOne">
-      <div class="form-group">
-        <select class="form-control" id="aspect">
-          <option value="1">Website Development</option>
-          <option value="2">Data Analysis</option>
-          <option value="3">Application Development</option>
-          <option value="4">Automated Processes</option>
-        </select>
+    <div class="container">
+      <span="clickable"><h1 class="bg-info">Which coding language should you learn?</h1></span>
+
+      <div id="survey-showing">
+      <h2 class="bg-success">What aspect of programming sounds the most interesting to you?</h2>
+      <form id="formOne">
+        <div class="form-group">
+          <select class="form-control" id="aspect">
+            <option value="1">Website Development</option>
+            <option value="2">Data Analysis</option>
+            <option value="3">Application Development</option>
+            <option value="4">Automated Processes</option>
+          </select>
+        </div>
+        <h2 class="bg-info">Pick a color</h2>
+        <div class="form-group">
+          <select class="form-control" id="q2">
+            <option value="1">Yellow</option>
+            <option value="2">Blue</option>
+            <option value="3">Green</option>
+            <option value="4">Red</option>
+          </select>
+        </div>
+        <h2 class="bg-success">Which major technology corporation would you like to work for?</h2>
+        <div class="form-group">
+          <select class="form-control" id="q3">
+            <option value="1">Google</option>
+            <option value="2">Facebook</option>
+            <option value="3">Microsoft</option>
+            <option value="4">Apple</option>
+          </select>
+        </div>
+        <h2 class="bg-info">Choose a random object</h2>
+        <div class="form-group">
+          <select class="form-control" id="q4">
+            <option value="1">Coffee Cup</option>
+            <option value="2">Snake</option>
+            <option value="3">Dagger</option>
+            <option value="4">Gemstone</option>
+          </select>
+        </div>
+        <h2 class="bg-success">How much do you already know about computer languages?</h2>
+        <div class="form-group">
+          <select class="form-control" id="q5">
+            <option value="1">Some basic information</option>
+            <option value="2">Virtually nothing</option>
+            <option value="3">I understand the basics of at least one language</option>
+            <option value="4">I have mastered at least one programming language</option>
+          </select>
+        </div>
       </div>
-      <h2>
-        <span>Pick a color</span>
-      </h2>
-      <div class="form-group">
-        <select class="form-control" id="q2">
-          <option value="1">Yellow</option>
-          <option value="2">Blue</option>
-          <option value="3">Green</option>
-          <option value="4">Red</option>
-        </select>
-      </div>
-      <h2>
-        <span>Which major technology corporation would you like to work for?</span>
-      </h2>
-      <div class="form-group">
-        <select class="form-control" id="q3">
-          <option value="1">Google</option>
-          <option value="2">Facebook</option>
-          <option value="3">Microsoft</option>
-          <option value="4">Apple</option>
-        </select>
-      </div>
-      <h2>
-        <span>Choose a random object</span>
-      </h2>
-      <div class="form-group">
-        <select class="form-control" id="q4">
-          <option value="1">Coffee Cup</option>
-          <option value="2">Snake</option>
-          <option value="3">Dagger</option>
-          <option value="4">Gemstone</option>
-        </select>
-      </div>
-      <h2>
-        <span>How much do you already know about computer languages?</span>
-      </h2>
-      <div class="form-group">
-        <select class="form-control" id="q5">
-          <option value="1">Some basic information</option>
-          <option value="2">Virtually nothing</option>
-          <option value="3">I understand the basics of at least one language</option>
-          <option value="4">I have mastered at least one programming language</option>
-        </select>
-      </div>
-    </form>
+      </form>
     
     <button type="submit" form="formOne" class="btn">Which coding language should I learn?</button>
       
