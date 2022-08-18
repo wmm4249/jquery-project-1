@@ -1,5 +1,4 @@
-body {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  body {
     margin: 2em;
     background: skyblue;
     background: linear-gradient(0deg, skyblue 0%, white 50%) 60%;
@@ -23,7 +22,7 @@ body {
     
   }
   
-  .button {
+  .btn {
     background-color: #108690;
     border: none;
     margin: 10px;
@@ -33,6 +32,5 @@ body {
     display: block;
     font-size: 15px;
     border-radius: 10px;
-    cursor: pointer;
     font-size: 20px;
   }

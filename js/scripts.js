@@ -11,7 +11,6 @@ $(document).ready(function() {
     $(".container").click(function() {
       $("#survey-showing").show();
     });
-  
 
     if (resultScore == 5 || resultScore <= 8) {
       result = "You chose mostly A's so you should learn Javascript.";
