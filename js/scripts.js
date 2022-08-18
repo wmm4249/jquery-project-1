@@ -14,13 +14,13 @@ $(document).ready(function() {
   
 
     if (resultScore == 5 || resultScore <= 8) {
-      result = "You should learn Javascript.";
+      result = "You chose mostly A's so you should learn Javascript.";
     } else if (resultScore >= 9 && resultScore <= 12) {
-      result = "You should learn Python.";
+      result = "You chose mostly B's, so you should learn Python.";
     } else if (resultScore >= 13 && resultScore <= 16) {
-      result = "You should learn C#.";
+      result = "You chose mostly C's, so you should learn C#.";
     } else if (resultScore >= 17 && resultScore <= 20) {
-      result = "You should learn Ruby.";
+      result = "You chose mostly D's, so you should learn Ruby.";
     }    
 
     $("#output").html(result);
