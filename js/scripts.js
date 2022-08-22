@@ -8,9 +8,6 @@ $(document).ready(function() {
     const q5 = parseInt($("#q5").val());
     let result;
     let resultScore = aspect + q2 + q3 + q4 + q5;
-    $(".container").click(function() {
-      $("#survey-showing").show();
-    });
 
     if (resultScore == 5 || resultScore <= 8) {
       result = "You should learn Javascript.";
@@ -21,6 +18,8 @@ $(document).ready(function() {
     } else if (resultScore >= 17 && resultScore <= 20) {
       result = "You should learn Ruby.";
     }    
+
+    $(".result").show();
 
     $("#output").html(result);
   });
