@@ -20,7 +20,14 @@ $(document).ready(function() {
     }    
 
     $(".result").show();
+    $("#survey").hide();
 
     $("#output").html(result);
+  });
+  $("#reload-page").click(function() {
+
+  $("#survey").show();
+
+  $(".result").hide();
   });
 });
