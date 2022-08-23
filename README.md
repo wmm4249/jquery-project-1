@@ -26,7 +26,7 @@ _If you would like to give feedback on this project, feel free to email or text 
 
 ## Setup Instructions
 
-_Lorem ipsum blablabla._
+_To clone the project to your computer, simply click the Code button, and select the option "Download ZIP". To display the webpage, click the "index.html" file and your default browser should open and display the page._
 
 ## Known Bugs
 
