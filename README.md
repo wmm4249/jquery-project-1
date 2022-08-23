@@ -1,4 +1,4 @@
-# _My First Independent Project_
+# _My jQuery Project_
 
 #### By _**Mars McCullough**_
 
@@ -6,7 +6,7 @@
 
 ## URL
 
-* https://github.com/wmm4249/jquery-project-1
+* https://wmm4249.github.io/jquery-project-1/
 
 ## Technologies Used
 
