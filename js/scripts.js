@@ -1,11 +1,11 @@
-document.ready(function() {
-    getElementById("formOne").submit(function(e) {
+$(document).ready(function() {
+  $("#formOne").submit(function(e) {
     e.preventDefault();
-    const aspect = parseInt(document.getElementById("aspect").value);
-    const q2 = parseInt(document.getElementById("q2").value);
-    const q3 = parseInt(document.getElementById("q3").value);
-    const q4 = parseInt(document.getElementById("q4").value);
-    const q5 = parseInt(document.getElementById("q5").value);
+    const aspect = parseInt($("#aspect").val());
+    const q2 = parseInt($("#q2").val());
+    const q3 = parseInt($("#q3").val());
+    const q4 = parseInt($("#q4").val());
+    const q5 = parseInt($("#q5").val());
     let result;
     let resultScore = aspect + q2 + q3 + q4 + q5;
 
