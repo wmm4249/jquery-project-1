@@ -1,7 +1,5 @@
   body {
     margin: 2em;
-    background: skyblue;
-    background: linear-gradient(0deg, skyblue 0%, white 50%) 60%;
   }
   
   h1 {
@@ -16,12 +14,11 @@
   }
   
   h3 {
-    font-size: 80px;
+    font-size: 40px;
     text-align: left;
     margin-top: 2em; 
-    
   }
-  
+
   .btn {
     background-color: #108690;
     border: none;
