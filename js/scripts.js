@@ -1,11 +1,11 @@
-$(document).ready(function() {
-  $("#formOne").submit(function(e) {
+document.ready(function() {
+  document.getElementById("formOne").submit(function(e) {
     e.preventDefault();
-    const aspect = parseInt($("#aspect").val());
-    const q2 = parseInt($("#q2").val());
-    const q3 = parseInt($("#q3").val());
-    const q4 = parseInt($("#q4").val());
-    const q5 = parseInt($("#q5").val());
+    const aspect = parseInt(document.getElementById("aspect").value);
+    const q2 = parseInt(document.getElementById("q2").value);
+    const q3 = parseInt(document.getElementById("q3").value);
+    const q4 = parseInt(document.getElementById("q4").value);
+    const q5 = parseInt(document.getElementById("q5").value);
     let result;
     let resultScore = aspect + q2 + q3 + q4 + q5;
 
@@ -19,20 +19,29 @@ $(document).ready(function() {
       result = "You should learn Ruby.";
     }    
 
-    $(".result").show();
-    $("#survey").hide();
+    document.getElementByClassName("result").style.display = "";
+    document.getElementById("survey").style.display = "none";
 
-    $("#output").html(result);
+    document.getElementById("output").innerHTML = result;
   });
-  $("#reload-page").click(function() {
+  document.getElementById("reload-page").click(function() {
 
-  $("#survey").show();
+  document.getElementById("survey").style.display = "";
 
-  $(".result").hide();
+  document.getElementByClassName("result").style.display = "none";
   });
 });
 
-
+// $(document).ready(function() {
+//   $("#formOne").submit(function(e) {
+//     e.preventDefault();
+//     const aspect = parseInt($("#aspect").val());
+//     const q2 = parseInt($("#q2").val());
+//     const q3 = parseInt($("#q3").val());
+//     const q4 = parseInt($("#q4").val());
+//     const q5 = parseInt($("#q5").val());
+//     let result;
+//     let resultScore = aspect + q2 + q3 + q4 + q5;
 
 //     if (resultScore == 5 || resultScore <= 8) {
 //       result = "You should learn Javascript.";
@@ -44,15 +53,15 @@ $(document).ready(function() {
 //       result = "You should learn Ruby.";
 //     }    
 
-//     document.getElementByClassName("result").style.display = "";
-//     document.getElementById("survey").style.display = "none";
+//     $(".result").show();
+//     $("#survey").hide();
 
-//     document.getElementById("output").innerHTML = result;
+//     $("#output").html(result);
 //   });
-//   document.getElementById("reload-page").click(function() {
+//   $("#reload-page").click(function() {
 
-//   document.getElementById("survey").style.display = "";
+//   $("#survey").show();
 
-//   document.getElementByClassName("result").style.display = "none";
+//   $(".result").hide();
 //   });
 // });
