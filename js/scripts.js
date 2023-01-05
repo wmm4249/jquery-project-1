@@ -1,5 +1,6 @@
-document.ready(function() {
-  document.getElementById("formOne").submit(function(e) {
+window.onload = function () {
+  let form = document.getElementById("formOne");
+  form.submit = function (e) {
     e.preventDefault();
     const aspect = parseInt(document.getElementById("aspect").value);
     const q2 = parseInt(document.getElementById("q2").value);
@@ -17,20 +18,20 @@ document.ready(function() {
       result = "You should learn C#.";
     } else if (resultScore >= 17 && resultScore <= 20) {
       result = "You should learn Ruby.";
-    }    
+    }
 
-    document.getElementByClassName("result").style.display = "";
-    document.getElementById("survey").style.display = "none";
+   document.getElementByClassName("result").style.display = "";
+   document.getElementById("survey").style.display = "none";
 
-    document.getElementById("output").innerHTML = result;
-  });
-  document.getElementById("reload-page").click(function() {
+   document.getElementById("output").innerHTML = result;
+  };
+  // document.getElementById("reload-page").click(function () {
 
-  document.getElementById("survey").style.display = "";
+  //   document.getElementById("survey").style.display = "";
 
-  document.getElementByClassName("result").style.display = "none";
-  });
-});
+  //   document.getElementByClassName("result").style.display = "none";
+  // });
+};
 
 // $(document).ready(function() {
 //   $("#formOne").submit(function(e) {
@@ -51,7 +52,7 @@ document.ready(function() {
 //       result = "You should learn C#.";
 //     } else if (resultScore >= 17 && resultScore <= 20) {
 //       result = "You should learn Ruby.";
-//     }    
+//     }
 
 //     $(".result").show();
 //     $("#survey").hide();
