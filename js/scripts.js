@@ -1,6 +1,6 @@
 window.onload = function () {
-  let form = document.getElementById("formOne");
-  function handleSelect(event) {
+  const form = document.getElementById("formOne");
+  function handleSubmit(event) {
     event.preventDefault();
     const selection = document.getElementById("survey").value;
     const aspect = parseInt(document.getElementById("aspect").value);
@@ -22,9 +22,10 @@ window.onload = function () {
     }
     console.log("result: ", result)
 
-    
+  
   window.addEventListener("load", function() {
-    document.getElementById("formOne").addEventListener("submit", handleSelect);
+    document.getElementById("formOne").addEventListener("submit", handleSubmit);
+    
 
   document.getElementByClassName("result").style.display = "initial";
 
@@ -32,7 +33,7 @@ window.onload = function () {
 
   document.getElementById("output").innerHTML = result;
 
-  });
+  })};
   document.getElementById("reload-page").click = function () {
 
     document.getElementById("survey").style.display = "";
