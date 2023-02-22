@@ -32,6 +32,6 @@
     font-size: 20px;
   }
 
-  .result {
+  #resultDiv {
     display: none;
   }
