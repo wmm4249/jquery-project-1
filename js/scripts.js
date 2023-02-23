@@ -1,7 +1,5 @@
 function handleSubmit(event) {
   event.preventDefault();
-  const form = document.getElementById("formOne");
-  const selection = document.getElementById("survey").value;
   const aspect = parseInt(document.getElementById("aspect").value);
   const q2 = parseInt(document.getElementById("q2").value);
   const q3 = parseInt(document.getElementById("q3").value);
@@ -25,19 +23,28 @@ function handleSubmit(event) {
 
   document.getElementById("output").innerHTML = result;
 }
-  
+
+function changeColor() {
+  document.getElementById("survey").addEventListener("click", clickEvent);
+}
+
+function reloadPage() { 
+  document.getElementById("survey").style.display = "";
+  document.getElementById("resultDiv").style.display = "none";
+};
+
 window.addEventListener("load", function() {
   document.getElementById("formOne").addEventListener("submit", handleSubmit);
   document.getElementById("reload-page").addEventListener("click", reloadPage);
 });
 
-function reloadPage() { 
+// To do Next:
 
-  document.getElementById("survey").style.display = "";
+// Pick what to click
+// Make a function called changeColor
+// addEventListener for clickEvent to changeColor
 
-  document.getElementById("resultDiv").style.display = "none";
-};
-// };
+// jQuery Code Below Here ===================================================================
 
 // $(document).ready(function() {
 //   $("#formOne").submit(function(e) {
