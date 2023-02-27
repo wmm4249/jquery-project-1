@@ -28,6 +28,10 @@ function changeColor() {
   document.getElementById("survey").style.backgroundColor = "#10906ac9";
 }
 
+function changeTextColor() {
+  document.getElementById("redColor").style.textColor = "#770d0d";
+}
+
 function reloadPage() { 
   document.getElementById("survey").style.display = "";
   document.getElementById("resultDiv").style.display = "none";
@@ -36,6 +40,7 @@ function reloadPage() {
 window.addEventListener("load", function() {
   document.getElementById("formOne").addEventListener("submit", handleSubmit);
   document.getElementById("reload-page").addEventListener("click", reloadPage);
+  document.getElementById("redColor").addEventListener("click", changeTextColor);
   document.getElementById("surveyColorToggle").addEventListener("click", changeColor)
 });
 
