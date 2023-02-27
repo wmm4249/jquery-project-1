@@ -29,7 +29,7 @@ function changeColor() {
 }
 
 function changeTextColor() {
-  document.getElementById("redColor").style.textColor = "#770d0d";
+  document.getElementById("redColor").style.color = "#770d0d";
 }
 
 function reloadPage() { 
