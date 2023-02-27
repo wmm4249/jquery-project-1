@@ -25,7 +25,7 @@ function handleSubmit(event) {
 }
 
 function changeColor() {
-  document.getElementById("survey").addEventListener("click", clickEvent);
+  document.getElementById("survey").style.backgroundColor = "#10906ac9";
 }
 
 function reloadPage() { 
@@ -36,6 +36,7 @@ function reloadPage() {
 window.addEventListener("load", function() {
   document.getElementById("formOne").addEventListener("submit", handleSubmit);
   document.getElementById("reload-page").addEventListener("click", reloadPage);
+  document.getElementById("surveyColorToggle").addEventListener("click", changeColor)
 });
 
 // To do Next:
